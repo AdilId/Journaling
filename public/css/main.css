@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../imgs/journal.jpg);
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: #327596;
+}
+nav {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+}
+nav ul li {
+    color: black;
+}
+nav ul li:not(:last-child) {
+    margin-right: 15px;
+}
+.main-div {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.main-div .journal {
+    background-color: white;
+    border-radius: 6px;
+    border: 5px solid #a400ff;
+}
+.main-div .journal .first-inf {
+    padding: 20px;
+}
+.main-div .journal h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #2eb8b8;
+}
+.main-div .journal p {
+    margin-bottom: 30px;
+}
+.main-div .journal a {
+    background-color: #a400ff;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+.main-div .journal .info {
+    background-color: #a400ff;
+    padding: 2px 20px;
+    height: calc(100% - 200px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.main-div .journal .info .avatar {
+    background-color: #2eb8b8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+/* start form  */
+.create-journal {
+    background-color: #327596;
+    margin: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+form {
+    background-color: #eee;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form label {
+    font-size: 30px;
+}
+form input {
+    padding: 20px;
+    font-size: 20px;
+}
+form textarea {
+    font-size: 20px;
+    padding: 20px;
+}
+form button {
+    padding: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.error {
+    font-size: 20px;
+    color: red;
+}
+.links nav {
+    background-color: #2eb8b8;
+    border-radius: 6px;
+    color: white;
+}
+.links nav a:visited {
+    color: white;
+}
+.container,
+.welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information {
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+}
+.information h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.information div {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.information .delete-form {
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    height: 0;
+    display: block;
+}
+.information .delete-form input {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #327596;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.register {
+    background-color: #327596;
+}
+.welcome {
+    color: white;
+    font-size: 70px;
+}
+.text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text .infor {
+    background-color: white;
+    border-radius: 6px;
+    padding: 50px;
+    font-size: 25px;
+}
+.yours {
+    margin-left: 20px;
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
